@@ -7,7 +7,7 @@ var getDisplayUrl = function (imgIdStr, goodId, key, isDisplay) {
 }
 var doc = document.getElementById('_frm').contentWindow.document;
 var ajaxDisplay = function (goodId, imgIdListStr, key, isDisplay) {
-  var src = getDeleteUrl(imgIdListStr, goodId, key, isDisplay);
+  var src = getDisplayUrl(imgIdListStr, goodId, key, isDisplay);
   var xhr;
   if (window.XMLHttpRequest) {
     xhr = new XMLHttpRequest();
