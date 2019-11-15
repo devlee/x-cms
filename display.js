@@ -3,7 +3,7 @@
 // 版权归作者所有 ©️2019
 
 var getDisplayUrl = function (imgIdStr, goodId, key, isDisplay) {
-  return "https://cms.jjshouse.com/index.php?q=admin/main/goodsImages/viewType&_=" + new Date().getTime() + "&act=batch_update_display&img_id_str=" + imgIdStr + "&is_display=" + isDisplay + "&image_type=" + key + "&goods_id=" + goodId
+  return "https://cms.jjshouse.com/index.php?q=admin/main/goodsImages/viewType&_=" + new Date().getTime() + "&act=batch_update_display&img_id_str=" + imgIdStr + "&is_display=" + (isDisplay ? 1 : 0) + "&image_type=" + key + "&goods_id=" + goodId
 }
 var doc = document.getElementById('_frm').contentWindow.document;
 var ajaxDisplay = function (goodId, imgIdListStr, key, isDisplay) {
